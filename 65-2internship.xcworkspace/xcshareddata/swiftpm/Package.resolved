@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Router",
+        "repositoryURL": "https://gitlab.65apps.com/ios/spm/router.git",
+        "state": {
+          "branch": null,
+          "revision": "c19046c07515bb22d71e189d8500c63dcbf29ba9",
+          "version": "1.0.6"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

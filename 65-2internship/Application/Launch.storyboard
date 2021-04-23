@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Controller-->
+        <scene sceneID="dlF-6G-ZoN">
+            <objects>
+                <viewController storyboardIdentifier="launch" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dVC-d0-iug" customClass="LaunchController" customModule="_5_2internship" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wEY-S0-Ejt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Просто приложение" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aA-YY-SHa">
+                                <rect key="frame" x="110.5" y="408.5" width="193.5" height="79"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="6Us-91-QU9">
+                                <rect key="frame" x="177" y="532.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="R0n-dW-3TW"/>
+                                    <constraint firstAttribute="height" constant="60" id="R8F-ft-vzo"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="bue-ps-3ZB">
+                                <rect key="frame" x="197" y="629" width="20" height="20"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eXc-8A-V4i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Us-91-QU9" firstAttribute="top" secondItem="6aA-YY-SHa" secondAttribute="bottom" constant="45" id="0Va-oz-6Ix"/>
+                            <constraint firstItem="6aA-YY-SHa" firstAttribute="centerX" secondItem="wEY-S0-Ejt" secondAttribute="centerX" id="2cF-9B-KZF"/>
+                            <constraint firstItem="bue-ps-3ZB" firstAttribute="top" secondItem="6Us-91-QU9" secondAttribute="bottom" constant="36" id="CH9-Fc-8JN"/>
+                            <constraint firstItem="6Us-91-QU9" firstAttribute="centerX" secondItem="wEY-S0-Ejt" secondAttribute="centerX" id="PK7-S1-R8Z"/>
+                            <constraint firstItem="bue-ps-3ZB" firstAttribute="centerX" secondItem="wEY-S0-Ejt" secondAttribute="centerX" id="bg8-md-mKq"/>
+                            <constraint firstItem="6aA-YY-SHa" firstAttribute="centerY" secondItem="wEY-S0-Ejt" secondAttribute="centerY" id="xTS-UX-GDS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Crd-d6-wTf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="120" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
